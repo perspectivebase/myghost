@@ -1,139 +1,128 @@
-# Liebling
+# Attila
 
-Liebling is a beautiful and clean Ghost theme that is easy and comfortable to use. **It's free** and you can use it for any kind of content you might have. Now with dark mode 🌓!
+A content focused responsive theme for [Ghost](https://github.com/tryghost/ghost/). See a demo at: [attila.peteramende.de](https://attila.peteramende.de/)
 
-If you find this theme useful, please consider to make a donation to support its development! 🙏🏼
+## ♥️ Support
 
-<a href="https://ko-fi.com/eddiesigner" target="_blank"><img src="https://res.cloudinary.com/edev/image/upload/v1583011476/button_y8hgt8.png" alt="Donate" style="width: 250px !important; height: 60px !important;" width="250" height="60"></a>
+Maintaining this project takes a lot of time. You can [buy me a drink](https://paypal.me/zutrinken) if you enjoy using Attila. Cheers 🍻
 
-## Ghost 4
+## 📷 Screenshot
 
-This theme has been optimized for Ghost 4, if you are looking for a Ghost 3 compatible version please refer to [this link](https://github.com/eddiesigner/liebling/releases/tag/v.0.9.4).
+<img src="https://raw.githubusercontent.com/zutrinken/attila/master/src/screenshot.png" />
 
-## Preview
+## ⭐️ Features
 
-You can see a live demo here: [https://liebling.eduardogomez.io](https://liebling.eduardogomez.io)
+* Responsive layout
+* Dark Mode & Theme Switch
+* Search & Popular Tags
+* Post reading progress
+* Code highlight including line numbers
+* Disqus support
+* Member menu buttons
+* Ghost accent color
 
-![](https://res.cloudinary.com/edev/image/upload/v1583792928/liebling/liebling-promo-desktop.jpg)
-<br><br>
-![](https://res.cloudinary.com/edev/image/upload/v1570370297/liebling/liebling-promo-mobile.jpg)
+## 🌍 Localization
 
-## Download
+🟩 Up to date  🟧 Missing strings
 
-To get the latest version please head over the [releases page](https://github.com/eddiesigner/liebling/releases) and download the file `liebling.zip` of the latest release.
+| Code | Flag | Language | Status | Translator |
+| :--: | :--: | :------: | :----: | :--------: |
+| `en` | 🇬🇧 | English | 🟩 | |
+| `de` | 🇩🇪 | German | 🟩 | |
+| `es` | 🇪🇸 | Spanish | 🟩 | [r1p](https://github.com/r1p) |
+| `fr` | 🇫🇷 | French | 🟧 | [robink](https://github.com/robink) |
+| `it` | 🇮🇹 | Italian | 🟧 | [fmaida](https://github.com/fmaida) |
+| `no` | 🇳🇴 | Norwegian | 🟧 | [arthurnoerve](https://github.com/arthurnoerve), [oisann](https://github.com/oisann), [Givemeurcookies](https://github.com/givemeurcookies) |
+| `zh` | 🇨🇳 | Chinese | 🟩 | [hao-lee](https://github.com/hao-lee), [izumiko](https://github.com/izumiko) |
+| `id` | 🇮🇩 | Indonesian | 🟧 | [simplyeazy](https://github.com/simplyeazy) |
+| `ro` | 🇷🇴 | Romanian | 🟧 | [cdorin93](https://github.com/cdorin93) |
+| `ru` | 🇷🇺 | Russian | 🟧 | [schamberg97](https://github.com/schamberg97) |
+| `tr` | 🇹🇷 | Turkish | 🟩 | [cgrgrbz](https://github.com/cgrgrbz), [electricalgorithm](https://github.com/electricalgorithm) |
+| `sv` | 🇸🇪 | Swedish | 🟧 | [martenj77](https://github.com/martenj77) |
+| `cs` | 🇨🇿 | Czech | 🟧 | [lunakv](https://github.com/lunakv) |
+| `pt` | 🇵🇹 | Portuguese | 🟧 | [matheusvanzan](https://github.com/matheusvanzan) |
+| `vi` | 🇻🇳 | Vietnamese | 🟧 | [JustHmmmm](https://github.com/justhmmmm) |
+| `el` | 🇬🇷 | Greek | 🟧 | [thiodordelis](https://github.com/thiodordelis) |
+| `dk` | 🇩🇰 | Danish | 🟧 | [jmayntzhusen](https://github.com/jmayntzhusen) |
+| `ar` | | Arabic | 🟧 | [pop-eax](https://github.com/pop-eax) |
+| `ca` | | Catalan | 🟧 | [arthurnoerve](https://github.com/arthurnoerve) |
+| `lt` | 🇱🇹 | Lithuanian | 🟧 | [arthurnoerve](https://github.com/arthurnoerve) |
+| `nl` | 🇳🇱 | Dutch | 🟧 | [gkdp](https://github.com/gkdp) |
+| `pl` | 🇵🇱 | Polish | 🟩 | [filipolszewski](https://github.com/filipolszewski), [MrBoombastic](https://github.com/mrboombastic) |
+| `eo` | | Esperanto | 🟧 | [ebanDev](https://github.com/ebanDev) |
+| `ga` | | Galego | 🟩 | [r1p](https://github.com/r1p) |
+| `uk` | 🇺🇦 | Ukrainian | 🟩 | [Rakanskiy](https://github.com/rakanskiy) |
 
-## Documentation
+## Show subscribe / account button in navigation
 
-To know how to enable the search, comments, newsletter and more, please head to the [Wiki](https://github.com/eddiesigner/liebling/wiki).
+1. Go to `partials/navigation-meta.hbs`.
+2. Remove comments on line `24`and `34`.
 
-## Features
+## 🔠 Setup custom google fonts
 
-### General features
+1. Go to [fonts.google.com](https://fonts.google.com/) and choose a font.
+2. Choose __Embed__ and copy the `<link>` code.
+3. Go to __Code injection__.  
+4. Add this to __Blog Header__:  
+````html
+<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --font-primary: 'Mukta', sans-serif;
+    --font-secondary: 'Crimson Text', serif;
+  }
+</style>
+````
+## 🌓 Force Light/Dark Mode
 
-* Clean and beautiful design 💅🏼
-* Lightning fast ⚡️
-* Fully responsive, looks great on any device 📱
-* Compatible with modern browsers 💻
-* Fast support 📞
+1. Go to __Code injection__.  
+2. Decide for `light` or `dark`.
+3. Add this to __Blog Header__:
 
-### Ghost features
+````html
+<script>localStorage.setItem('attila_theme', 'dark');</script>
+<style>.js-theme {display:none!important;}</style>
+````
 
-* Subscription form [more info here](https://github.com/eddiesigner/liebling/wiki/How-to-enable-subscribers)
-* Multiple authors
-* Logo support
-* Secondary menu
-* Featured posts and pages
-* Post, Page, Tag, Authors, pages
-* Koenig editor
-* Bookmark card
-* Gallery card
-* Blog title and description
-* Cover image for Home, Post, Page, Tag, Author pages
-* Author avatar, bio, location, website and social links
-* Facebook and Twitter social links
-* Reading time
-* Next and Previous post navigation
-* Primary tag in posts
+## 💬 Setup [Disqus](https://disqus.com/)
 
-### Liebling unique features
+1. Go to __Code injection__.  
+2. Add this to __Blog Header__:  
+````html
+<script>var disqus = 'YOUR_DISQUS_SHORTNAME';</script>
+````
 
-* Dark mode
-* Search
-* Custom Subscribe page
-* Custom authors page
-* Custom error page
-* Medium style image zoom
-* Comments with Disqus
-* Share post on Facebook and Twitter
-* Slider for featured posts
-* Support for normal, wide and full images in posts
-* Reading progress indicator
-* RTL language support
+## 🔍 Setup search
 
-## Localization
+1. Go to __Integrations__.  
+2. Choose __Add custom integration__, name it `Search` and choose __Create__. Copy the generated Content API Key.  
+3. Go to __Code injection__.  
+4. Add this to __Site Header__:  
+````html
+<script>
+  var gh_search_key = 'API_KEY';
+  var gh_search_migration = 'v2';
+</script>
+````
+## ⚙️ Development
 
-* English
-* Spanish
-* German by [D3473R](https://github.com/D3473R)
-* Informal german by [D3473R](https://github.com/D3473R)
-* Bulgarian by [clappingmonkey](https://github.com/clappingmonkey)
-* Vietnamese by [hiensarahly](https://github.com/hiensarahly)
-* Italian by [vignini](https://github.com/vignini)
-* French by [v1nc3nt-fr](https://github.com/v1nc3nt-fr)
-* Informal french by [v1nc3nt-fr](https://github.com/v1nc3nt-fr)
-* Portuguese by [ivomota](https://github.com/ivomota)
-* Arabic by [allamiro](https://github.com/allamiro)
-* Polish by [otlet](https://github.com/otlet)
-* Brazilian portuguese by [pedrinholula](https://github.com/pedrinholula)
-* Russian by [stereohorse](https://github.com/stereohorse)
-* Kyrgyz by [januchaos](https://github.com/januchaos)
-* Hebrew by [cohen604](https://github.com/cohen604)
-* Turkish by [mskoroglu](https://github.com/mskoroglu)
-* Romanian by [dsecareanu](https://github.com/dsecareanu)
-* Chinese Simplified by [IvyB](https://github.com/IvyB)
-* Indonesian by [iqbalbinsb](https://github.com/iqbalbinsb), [khannedy](https://github.com/khannedy)
-* Lithuanian by [pintom](https://github.com/pintom)
-* Dutch by [Qballjos](https://github.com/Qballjos)
-* Traditional Chinese by [weixiang](https://github.com/weixiang)
-* Persian (Farsi) by [Aminoiz](https://github.com/Aminoiz)
-* Ukrainian by [partizan007](https://github.com/partizan007)
-* Kazakh by [arshyn-t](https://github.com/arshyn-t)
-* Korean by [chocosobo](https://github.com/chocosobo)
-* Japanese by [ViaSnake](https://github.com/ViaSnake)
-* Czech by [Fjuro](https://github.com/Fjuro)
+Install [Grunt](https://gruntjs.com/getting-started/):
+````bash
+npm install -g grunt-cli
+````
+Install Grunt dependencies:
+````bash
+npm install
+````
+Build Grunt project:
+````bash
+grunt build
+````
+The compress Grunt task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
+````bash
+grunt compress
+````
+## ⚖️ Copyright & License
 
-## Tests performed
-
-* W3C Markup Validation: [Correct validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fliebling.eduardogomez.io%2F)
-* Ghost GScan: [100/100 points](https://gscan.ghost.org/)
-* GTmetrix PageSpeed Score: **A (97%)**
-* PageSpeed Insights: **94/100** (mobile) **99/100** (desktop)
-* Pingdom Performance Grade: **A 91**
-
-## Theme development
-
-Thanks to [D3473R](https://github.com/D3473R) 💪🏼 for creating a development environment with Docker. From now on you can work on this theme without installing a Ghost instance on your local machine. With two commands you have an instant development setup and you can build the theme for production.
-
-Please take a look to this page to see how it works: https://github.com/eddiesigner/liebling/wiki/Theme-development-with-Docker
-
-## Help and Support
-
-If you have any questions or troubles with this product, please feel free to open an issue [here](https://github.com/eddiesigner/liebling/issues).
-
-## Contributing
-
-Contributions are very welcome. First, please read the [Pull Request Guidelines](https://github.com/eddiesigner/liebling/wiki/Pull-Request-Guidelines) on the wiki.
-
-## Related
-
-* [Firma](https://gum.co/ZXLha) - Ghost theme that can be used by startups to large companies to publish any kind of articles related to their business. It stands out for its clean design and is able to adapt to any company's identity.
-
-* [Weiss Pro](https://gum.co/pzvDn) - Modern and beautiful Ghost theme ready to make your content shine.
-
-## License
-
-Copyright (c) 2019-2020 Eduardo Gómez. Released under the [MIT license](https://github.com/eddiesigner/liebling/blob/master/LICENSE).
-
-## Credits
-
-All the photos I used in this theme were taken from [Unsplash](https://unsplash.com)
+Copyright (C) 2015-2021 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/attila/blob/master/LICENSE).
